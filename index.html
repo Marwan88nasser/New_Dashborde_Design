@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Faile Css  -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start layout -->
+    <div>
+      <div class="app app-h">
+        <div class="sidebar">
+          <div class="close tog-nav tog-active" data-active=".app">
+            <i class="fas fa-xmark"></i>
+          </div>
+          <ul class="list">
+            <li class="list-item active">
+              <a href="index.html">
+                <div>
+                  <i class="fa-solid fa-desktop icon"></i>
+                  الواجهة
+                </div>
+              </a>
+            </li>
+            <li class="list-item">
+              <a data-bs-toggle="collapse" href="#emails" aria-expanded="false">
+                <div>
+                  <i class="fa-solid fa-bell icon"></i>
+                  البريد
+                </div>
+                <div class="badge-count">0</div>
+                <i class="fa-solid fa-angle-down arrow"></i>
+              </a>
+            </li>
+            <div class="collapse item-collapse" id="emails">
+              <li class="list-item">
+                <a href="sendEmail.html">
+                  <div>
+                    <i class="fa-solid fa-bell icon"></i>
+                    ارسال بريد
+                  </div>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="">
+                  <div>
+                    <i class="fa-solid fa-bell icon"></i>
+                    البريد المرسل
+                  </div>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="">
+                  <div>
+                    <i class="fa-solid fa-bell icon"></i>
+                    رفع بريد جديد
+                  </div>
+                </a>
+              </li>
+            </div>
+            <li class="list-item">
+              <a
+                data-bs-toggle="collapse"
+                href="#item-1"
+                class="collapsed"
+                aria-expanded="false"
+              >
+                <div>
+                  <i class="fa-solid fa-timeline icon"></i>
+                  شجرة الحسابات
+                </div>
+                <i class="fas fa-angle-down arrow"></i>
+              </a>
+            </li>
+            <div class="item-collapse collapse" id="item-1">
+              <div class="d-flex justify-content-center px-2">
+                <a href="#" class="btn w-100 btn-sm btn-success">اضافة / تعدل</a>
+              </div>
+              <div class="option-section">
+                <a class="item" data-bs-toggle="collapse" href="#link-1">
+                  <i class="fas fa-caret-down arrow-after"></i>
+                  <i class="arrow-before fas fa-caret-left"></i>
+                  <div class="content-item">
+                    <i class="fa-solid fa-list"></i>
+                    1-الاصول
+                  </div>
+                </a>
+                
+                <div class="collapse collapse-border" id="link-1">
+                  <div class="mar-side">
+                    <a class="item" data-bs-toggle="collapse" href="#link-2">
+                      <i class="fas fa-caret-down arrow-after"></i>
+                      <i class="arrow-before fas fa-caret-left"></i>
+                      <div class="content-item">
+                        <i class="fa-solid fa-plus"></i>
+                        11-اصول غير متداولة
+                      </div>
+                    </a>
+                    
+                    <div class="collapse collapse-border" id="link-2">
+                      <div class="mar-side">
+                        <a class="item">
+                          <div class="content-item">
+                            <i class="fa-solid fa-plus"></i>
+                            111-السيارات
+                          </div>
+                        </a>
+                        <div class="collapse collapse-border" id="link-2">
+                          <div class="mar-side">
+                            <a class="item">
+                              <div class="content-item">
+                                <i class="fa-solid fa-plus"></i>
+                                111-هايلكس بكب اب
+                              </div>
+                            </a>
+                            <a class="item">
+                              <div class="content-item">
+                                <i class="fa-solid fa-plus"></i>
+                                112-نيسان جيب
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <a class="item" data-bs-toggle="collapse" href="#link-5">
+                      <i class="fas fa-caret-down arrow-after"></i>
+                      <i class="arrow-before fas fa-caret-left"></i>
+                      <div class="content-item">
+                        <i class="fa-solid fa-plus"></i>
+                        12-اصول متداولة
+                      </div>
+                    </a>
+                    
+                    <div class="collapse collapse-border" id="link-5">
+                      <div class="mar-side"></div>
+                    </div>
+                  </div>
+                </div>
+                
+                <a class="item" data-bs-toggle="collapse" href="#link-7">
+                  <i class="fas fa-caret-down arrow-after"></i>
+                  <i class="arrow-before fas fa-caret-left"></i>
+                  <div class="content-item">
+                    <i class="fa-solid fa-list"></i>
+                    2-الإلتزامات/الخصوم
+                  </div>
+                </a>
+                
+                <div class="collapse collapse-border" id="link-7">
+                  <div class="mar-side"></div>
+                </div>
+                
+                <a class="item" data-bs-toggle="collapse" href="#link-8">
+                  <i class="fas fa-caret-down arrow-after"></i>
+                  <i class="arrow-before fas fa-caret-left"></i>
+                  <div class="content-item">
+                    <i class="fa-solid fa-list"></i>
+                    3-حقوق الملاك
+                  </div>
+                </a>
+                <div class="collapse collapse-border" id="link-8">
+                  <div class="mar-side"></div>
+                </div>
+                
+                <a class="item" data-bs-toggle="collapse" href="#link-9">
+                  <i class="fas fa-caret-down arrow-after"></i>
+                  <i class="arrow-before fas fa-caret-left"></i>
+                  <div class="content-item">
+                    <i class="fa-solid fa-list"></i>
+                    4-الايرادات
+                  </div>
+                </a>
+                <div class="collapse collapse-border" id="link-9">
+                  <div class="mar-side"></div>
+                </div>
+                
+                <a class="item" data-bs-toggle="collapse" href="#link-10">
+                  <i class="fas fa-caret-down arrow-after"></i>
+                  <i class="arrow-before fas fa-caret-left"></i>
+                  <div class="content-item">
+                    <i class="fa-solid fa-list"></i>
+                    5-المصروفات
+                  </div>
+                </a>
+                <div class="collapse collapse-border" id="link-10">
+                  <div class="mar-side"></div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <div class="main-side">
+          <div class="container-fluid mt-3">
+            <nav class="main-navbar">
+              <div class="d-flex align-items-center justify-content-between">
+                <div
+                  class="tog-nav tog-active"
+                  data-tog="true"
+                  data-active=".app"
+                >
+                  <i class="fas fa-bars"></i>
+                </div>
+                <div class="list-item">
+                  <div class="btn btn-green btn-sm">
+                    يوجد طلبات جديدة
+                    <i class="fa-solid fa-bell fa-shake"></i>
+                  </div>
+                  <a href="#" class="icon-nav">
+                    <i class="fa-solid fa-language"></i>
+                  </a>
+                  <div class="dropdown msg icon-nav">
+                    <div class="badge-count">0</div>
+                    <button
+                      class="dropdown-toggle icon-nav"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-regular fa-envelope"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item" href="#"></a></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown notice icon-nav">
+                    <div class="badge-count">0</div>
+                    <button
+                      class="dropdown-toggle icon-nav"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="far fa-bell"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item" href="#"></a></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                  <a href="#" class="icon-nav">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  </a>
+                </div>
+              </div>
+            </nav>
+            <section class="py-5">
+              <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb bg-light p-3">
+                  <li href="" class="breadcrumb-item" aria-current="page">
+                    الرئيسية
+                  </li>
+                </ol>
+              </nav>
+              <div class="section_content">..............</div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer-app d-flex align-items-center justify-content-end gap-2"
+      >
+        <a href="https://www.const-tech.org/">
+          جميع الحقوق محفوظة موثوق 2022
+          <img src="img/login_logo.png" class="logo" alt="logo_login" />
+        </a>
+      </div>
+    </div>
+    <!-- End layout -->
+    <!-- Js Files -->
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>
