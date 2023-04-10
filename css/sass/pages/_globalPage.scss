@@ -249,17 +249,17 @@ input[readonly] {
 
 .main-pagination {
   border-radius: 4px !important;
-  .page-item{
+  .page-item {
+    .page-link {
+      color: #6c757d !important;
+      font-size: 13px;
+    }
+    &.active {
       .page-link {
-          color: #6c757d !important;
-
+        background-color: $red-color !important;
+        border-color: $red-color !important;
+        color: white !important;
       }
-      &.active {
-          .page-link {
-              background-color: $red-color !important;
-              border-color: $red-color !important;
-              color: white !important;
-          }
-      }
+    }
   }
 }

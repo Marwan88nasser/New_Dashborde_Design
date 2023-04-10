@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الرئيسية</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Main File Css  -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Start layout -->
+  <div>
+    <div class="app app-h">
+      <div class="sidebar">
+        <div class="close tog-nav tog-active" data-active=".app">
+          <i class="fas fa-xmark"></i>
+        </div>
+        <ul class="list">
+          <li class="list-item active">
+            <a href="index.html">
+              <div>
+                <i class="fa-solid fa-desktop icon"></i>
+                الواجهة
+              </div>
+            </a>
+          </li>
+          <li class="list-item">
+            <a data-bs-toggle="collapse" href="#settings" aria-expanded="false">
+              <div>
+                <i class="fa-solid fa-gear icon"></i>
+                الاعدادات
+              </div>
+              <i class="fa-solid fa-angle-right arrow"></i>
+            </a>
+          </li>
+          <div id="settings" class="collapse item-collapse">
+            <li class="list-item">
+              <a href="settings.html" class="">
+                <div>
+                  <i class="fa-solid fa-gear icon"></i>
+                  الاعدادات
+                </div>
+              </a>
+            </li>
+          </div>
+          <li class="list-item">
+            <a href="profileEmployee.html">
+              <div>
+                <i class="fa-solid fa-user"></i>
+                ملف العضو
+              </div>
+            </a>
+          </li>
+          <li class="list-item">
+            <a data-bs-toggle="collapse" href="#tickets" aria-expanded="false">
+              <div>
+                <i class="fa-solid fa-ticket icon"></i>
+                تذاكر الدعم الفني
+              </div>
+              <i class="fa-solid fa-angle-right arrow"></i>
+            </a>
+          </li>
+          <div id="tickets" class="collapse item-collapse">
+            <li class="list-item">
+              <a href="Tickets.html">
+                <div>
+                  <i class="fa-solid fa-border-all"></i>
+                  الكل
+                </div>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="main-side">
+        <div class="container-fluid mt-5">
+          <nav class="main-navbar">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="tog-nav tog-active" data-tog="true" data-active=".app">
+                <i class="fas fa-bars"></i>
+              </div>
+              <div class="list-item">
+                <div class="btn btn-green btn-sm">
+                  يوجد طلبات جديدة
+                  <i class="fa-solid fa-bell fa-shake"></i>
+                </div>
+                <a href="#" class="icon-nav">
+                  <i class="fa-solid fa-language"></i>
+                </a>
+                <div class="dropdown msg icon-nav">
+                  <div class="badge-count">0</div>
+                  <button class="dropdown-toggle icon-nav" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-regular fa-envelope"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="dropdown notice icon-nav">
+                  <div class="badge-count">0</div>
+                  <button class="dropdown-toggle icon-nav" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="far fa-bell"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <a href="#" class="icon-nav">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+              </div>
+            </div>
+          </nav>
+          <section class="py-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb bg-light p-3">
+                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">تفاصيل التذكرة</li>
+              </ol>
+            </nav>
+            <div class="section_content">
+              <div class="row g-3">
+                <div class="col-12 col-md-3 col-lg-4">
+                  <div class="profile-bar">
+                    <ul class="bar-list-no">
+                      <li>
+                        تفاصيل التذكرة
+                      </li>
+                      <li>
+                        <div class="alert alert-success fs-13px text-center w-100 mb-0" role="alert">
+                          <div class="title">
+                            <i class="fa-regular fa-circle-check"></i>
+                            تذكرة # 1
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="key">
+                          <i class="fa-solid fa-circle-info"></i>
+                          <span class="name">موضوع</span>
+                        </div>
+                        <p class="value">تجربة تذكرة</p>
+                      </li>
+                      <li>
+                        <div class="key">
+                          <i class="fa-solid fa-user"></i>
+                          <span class="name"> موظف</span>
+                        </div>
+                        <p class="value">
+                          <img src="img/login_logo.png" alt="user" width="20">
+                          موظف 1
+                        </p>
+                      </li>
+                      <li>
+                        <div class="key">
+                          <i class="fa-solid fa-circle-info"></i>
+                          <span class="name"> الأقسام/الفروع</span>
+                        </div>
+                        <p class="value">
+                          تجربة قسم
+                        </p>
+                      </li>
+                      <li>
+                        <div class="key">
+                          <i class="fa-solid fa-circle-info"></i>
+                          <span class="name">أنشئت في</span>
+                        </div>
+                        <p class="value">
+                          10-Apr-23
+                          <i class="fa-solid fa-calendar-days"></i>
+                        </p>
+                      </li>
+                      <form action="" method="">
+                        <li>
+                          <div class="inp-holder w-100">
+                            <label for="status" class="small-label">حالة التذكرة<span
+                                class="text-danger">*</span></label>
+                            <select name="status" id="status" class="form-select">
+                              <option value="open">فتح
+                              </option>
+                              <option value="close">
+                                مغلق</option>
+                            </select>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="inp-holder w-100">
+                            <label for="notes" class="small-label">ملاحظات <span class="text-danger">*</span></label>
+                            <textarea name="notes" id="notes" rows="3" class="form-control"></textarea>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="btn-holder w-100">
+                            <button type="submit" class="btn btn-sm main-btn px-3">تحديث الحالة</button>
+                          </div>
+                        </li>
+                      </form>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-9 col-lg-8">
+                  <div class="content_view">
+                    <div class="content_header">
+                      <div class="title fs-11px">
+                        <i class="fa-solid fa-ticket fs-12px main-red-color"></i>
+                        خيارات التذكرة
+                      </div>
+                    </div>
+                    <ul class="nav nav-pills mb-3 main-tab-color" id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-deal-tab" data-bs-toggle="pill"
+                          data-bs-target="#pills-deal" type="button" role="tab" aria-selected="true">
+                          اكتب ردا
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-commotion-tab" data-bs-toggle="pill"
+                          data-bs-target="#pills-commotion" type="button" role="tab" aria-selected="false">
+                          الملفات المرفقة
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-deal" role="tabpanel">
+                        <form action="" method="" class="row g-3">
+                          <div class="col-12 col-md-12">
+                          </div>
+                          <div class="inp-holder w-100">
+                            <label for="reply" class="small-label">اكتب رد <span class="text-danger">*</span></label>
+                            <textarea name="reply" id="reply" rows="3" class="form-control"></textarea>
+                          </div>
+                          <div class="inp-holder w-100">
+                            <label class="small-label">ارفاق ملف</label>
+                            <input type="file" name="file" class="form-control">
+                          </div>
+                          <div class="btn-holder w-100">
+                            <button type="submit" class="btn btn-sm main-btn px-3"> ارسال</button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="tab-pane fade" id="pills-commotion" role="tabpanel">
+                        <form action="" method="" class="row g-4">
+                          <div class="col-12 col-md-6">
+                            <div class="inp-holder">
+                              <label for="title" class="small-label">مسمى/عنوان</label>
+                              <input type="text" name="title" class="form-control" placeholder="مسمى/عنوان">
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="inp-holder">
+                              <label for="" class="small-label">مرفق</label>
+                              <input type="file" name="file" class="form-control ">
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-12">
+                            <div class="btn-holder">
+                              <button type="submit" class="btn btn-sm px-3 main-btn">
+                                اضف ملف
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="footer-app d-flex align-items-center justify-content-end gap-2">
+          <a href="https://www.const-tech.org/">
+            جميع الحقوق محفوظة 2023
+            <img src="img/login_logo.png" class="logo" alt="logo_login" />
+          </a>
+        </div>
+        <!-- End layout -->
+        <!-- Js Files -->
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
+</body>
+
+</html>

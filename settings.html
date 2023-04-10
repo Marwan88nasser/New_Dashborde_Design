@@ -1,235 +1,244 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>الرئيسية</title>
-    <!-- Normalize -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.min.css" />
-    <!-- Main Faile Css  -->
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- Font Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Start layout -->
-    <div>
-      <div class="app app-h">
-        <div class="sidebar">
-          <div class="close tog-nav tog-active" data-active=".app">
-            <i class="fas fa-xmark"></i>
-          </div>
-          <ul class="list">
-            <li class="list-item active">
-              <a href="index.html">
-                <div>
-                  <i class="fa-solid fa-desktop icon"></i>
-                  الواجهة
-                </div>
-              </a>
-            </li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الرئيسية</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Main Faile Css  -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Start layout -->
+  <div>
+    <div class="app app-h">
+      <div class="sidebar">
+        <div class="close tog-nav tog-active" data-active=".app">
+          <i class="fas fa-xmark"></i>
+        </div>
+        <ul class="list">
+          <li class="list-item active">
+            <a href="index.html">
+              <div>
+                <i class="fa-solid fa-desktop icon"></i>
+                الواجهة
+              </div>
+            </a>
+          </li>
+          <li class="list-item">
+            <a data-bs-toggle="collapse" href="#settings" aria-expanded="false">
+              <div>
+                <i class="fa-solid fa-gear icon"></i>
+                الاعدادات
+              </div>
+              <i class="fa-solid fa-angle-right arrow"></i>
+            </a>
+          </li>
+          <div id="settings" class="collapse item-collapse">
             <li class="list-item">
-              <a href="settings.html">
+              <a href="settings.html" class="">
                 <div>
                   <i class="fa-solid fa-gear icon"></i>
                   الاعدادات
                 </div>
               </a>
             </li>
+          </div>
+          <li class="list-item">
+            <a href="profileEmployee.html">
+              <div>
+                <i class="fa-solid fa-user"></i>
+                ملف العضو
+              </div>
+            </a>
+          </li>
+          <li class="list-item">
+            <a data-bs-toggle="collapse" href="#tickets" aria-expanded="false">
+              <div>
+                <i class="fa-solid fa-ticket icon"></i>
+                تذاكر الدعم الفني
+              </div>
+              <i class="fa-solid fa-angle-right arrow"></i>
+            </a>
+          </li>
+          <div id="tickets" class="collapse item-collapse">
             <li class="list-item">
-              <a href="settings.html">
+              <a href="Tickets.html">
                 <div>
-                  <i class="fa-solid fa-user"></i>
-                  الموظف
+                  <i class="fa-solid fa-border-all"></i>
+                  الكل
                 </div>
               </a>
             </li>
-            
-          </ul>
-        </div>
-        <div class="main-side">
-          <div class="container-fluid mt-5">
-            <nav class="main-navbar">
-              <div class="d-flex align-items-center justify-content-between">
-                <div
-                  class="tog-nav tog-active"
-                  data-tog="true"
-                  data-active=".app"
-                >
-                  <i class="fas fa-bars"></i>
-                </div>
-                <div class="list-item">
-                  <div class="btn btn-green btn-sm">
-                    يوجد طلبات جديدة
-                    <i class="fa-solid fa-bell fa-shake"></i>
-                  </div>
-                  <a href="#" class="icon-nav">
-                    <i class="fa-solid fa-language"></i>
-                  </a>
-                  <div class="dropdown msg icon-nav">
-                    <div class="badge-count">0</div>
-                    <button
-                      class="dropdown-toggle icon-nav"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <i class="fa-regular fa-envelope"></i>
-                    </button>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li><a class="dropdown-item" href="#"></a></li>
-                      <li></li>
-                    </ul>
-                  </div>
-                  <div class="dropdown notice icon-nav">
-                    <div class="badge-count">0</div>
-                    <button
-                      class="dropdown-toggle icon-nav"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <i class="far fa-bell"></i>
-                    </button>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li><a class="dropdown-item" href="#"></a></li>
-                      <li></li>
-                    </ul>
-                  </div>
-                  <a href="#" class="icon-nav">
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                  </a>
-                </div>
-              </div>
-            </nav>
-            <section class="py-3">
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-light p-3">
-                  <li href="" class="breadcrumb-item" aria-current="page">
-                    الاعدادات
-                  </li>
-                </ol>
-              </nav>
-              <div class="section_content">
-                <div class="content_view">
-                  <div class="row g-3">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="logo" class="small-label">لوجو الموقع</label>
-                            <input type="file" id="logo" class="form-control icon" >
-                        </div>
-                        <div class="form-group">
-                            <img src="img/login_logo.png" alt="Logo Site" width="100" height="100">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="icon" class="small-label">ايقونه المتصفح</label>
-                            <input type="file" id="icon" class="form-control img" >
-                        </div>
-                        <div class="form-group">
-                            <img src="img/login_logo.png" alt="Browser Icon" width="100" height="100">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="facebook" class="small-label">فيس بوك</label>
-                            <input type="text" id="facebook" class="form-control" >
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="twitter" class="small-label">تويتر</label>
-                            <input type="text" id="twitter" class="form-control" >
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="snapchat" class="small-label">انستجرام</label>
-                            <input type="text"  id="instagram" class="form-control" >
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="support_mail" class="small-label">البريد</label>
-                            <input type="email" id="support_mail" class="form-control" >
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="phone" class="small-label">رقم الهاتف</label>
-                            <input type="tel" id="phone" class="form-control" >
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="website_name" class="small-label">اسم الموقع</label>
-                            <input type="text" id="website_name" class="form-control" >
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="link" class="small-label">رابط الموقع</label>
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="website_active" class="small-label">حالة الموقع</label>
-                            <select  id="website_active" class="form-select">
-                                <option value="">اختر حالة الموقع</option>
-                                <option value="1" >مفعل</option>
-                                <option value="0" >غير مفعل</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="website_inactive_message" class="small-label">رسالة تعطيل الموقع</label>
-                            <textarea id="website_inactive_message" class="form-control"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary btn-sm px-5">حفظ</button>
-                    </div>
-                </div>
-                </div>
-              </div>
-            </section>
           </div>
-        </div>
+        </ul>
       </div>
-      <div
-        class="footer-app d-flex align-items-center justify-content-end gap-2"
-      >
-        <a href="https://www.const-tech.org/">
-          جميع الحقوق محفوظة موثوق 2022
-          <img src="img/login_logo.png" class="logo" alt="logo_login" />
-        </a>
+      <div class="main-side">
+        <div class="container-fluid mt-5">
+          <nav class="main-navbar">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="tog-nav tog-active" data-tog="true" data-active=".app">
+                <i class="fas fa-bars"></i>
+              </div>
+              <div class="list-item">
+                <div class="btn btn-green btn-sm">
+                  يوجد طلبات جديدة
+                  <i class="fa-solid fa-bell fa-shake"></i>
+                </div>
+                <a href="#" class="icon-nav">
+                  <i class="fa-solid fa-language"></i>
+                </a>
+                <div class="dropdown msg icon-nav">
+                  <div class="badge-count">0</div>
+                  <button class="dropdown-toggle icon-nav" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-regular fa-envelope"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="dropdown notice icon-nav">
+                  <div class="badge-count">0</div>
+                  <button class="dropdown-toggle icon-nav" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="far fa-bell"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <a href="#" class="icon-nav">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+              </div>
+            </div>
+          </nav>
+          <section class="py-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb bg-light p-3">
+                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                <li href="" class="breadcrumb-item" aria-current="page">
+                  الاعدادات
+                </li>
+              </ol>
+            </nav>
+            <div class="section_content">
+              <div class="content_view">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="logo" class="small-label">لوجو الموقع</label>
+                      <input type="file" id="logo" class="form-control icon">
+                    </div>
+                    <div class="form-group">
+                      <img src="img/login_logo.png" alt="Logo Site" width="100" height="100">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="icon" class="small-label">ايقونه المتصفح</label>
+                      <input type="file" id="icon" class="form-control img">
+                    </div>
+                    <div class="form-group">
+                      <img src="img/login_logo.png" alt="Browser Icon" width="100" height="100">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="facebook" class="small-label">فيس بوك</label>
+                      <input type="text" id="facebook" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="twitter" class="small-label">تويتر</label>
+                      <input type="text" id="twitter" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="snapchat" class="small-label">انستجرام</label>
+                      <input type="text" id="instagram" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="support_mail" class="small-label">البريد</label>
+                      <input type="email" id="support_mail" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="phone" class="small-label">رقم الهاتف</label>
+                      <input type="tel" id="phone" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="website_name" class="small-label">اسم الموقع</label>
+                      <input type="text" id="website_name" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="link" class="small-label">رابط الموقع</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="website_active" class="small-label">حالة الموقع</label>
+                      <select id="website_active" class="form-select">
+                        <option value="">اختر حالة الموقع</option>
+                        <option value="1">مفعل</option>
+                        <option value="0">غير مفعل</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="website_inactive_message" class="small-label">رسالة تعطيل الموقع</label>
+                      <textarea id="website_inactive_message" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary btn-sm px-5">حفظ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
-    <!-- End layout -->
-    <!-- Js Files -->
-    <script src="js/main.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/all.min.js"></script>
-  </body>
+    <div class="footer-app d-flex align-items-center justify-content-end gap-2">
+      <a href="https://www.const-tech.org/">
+        جميع الحقوق محفوظة 2023
+        <img src="img/login_logo.png" class="logo" alt="logo_login" />
+      </a>
+    </div>
+  </div>
+  <!-- End layout -->
+  <!-- Js Files -->
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+
 </html>

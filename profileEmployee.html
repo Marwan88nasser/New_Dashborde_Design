@@ -39,22 +39,51 @@
             </a>
           </li>
           <li class="list-item">
-            <a href="settings.html">
+            <a data-bs-toggle="collapse" href="#settings" aria-expanded="false">
               <div>
                 <i class="fa-solid fa-gear icon"></i>
                 الاعدادات
               </div>
+              <i class="fa-solid fa-angle-right arrow"></i>
             </a>
           </li>
+          <div id="settings" class="collapse item-collapse">
+            <li class="list-item">
+              <a href="settings.html" class="">
+                <div>
+                  <i class="fa-solid fa-gear icon"></i>
+                  الاعدادات
+                </div>
+              </a>
+            </li>
+          </div>
           <li class="list-item">
-            <a href="settings.html">
+            <a href="profileEmployee.html">
               <div>
                 <i class="fa-solid fa-user"></i>
-                الموظف
+                ملف العضو
               </div>
             </a>
           </li>
-
+          <li class="list-item">
+            <a data-bs-toggle="collapse" href="#tickets" aria-expanded="false">
+              <div>
+                <i class="fa-solid fa-ticket icon"></i>
+                تذاكر الدعم الفني
+              </div>
+              <i class="fa-solid fa-angle-right arrow"></i>
+            </a>
+          </li>
+          <div id="tickets" class="collapse item-collapse">
+            <li class="list-item">
+              <a href="Tickets.html">
+                <div>
+                  <i class="fa-solid fa-border-all"></i>
+                  الكل
+                </div>
+              </a>
+            </li>
+          </div>
         </ul>
       </div>
       <div class="main-side">
@@ -103,9 +132,8 @@
           <section class="py-3">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb bg-light p-3">
-                <li href="" class="breadcrumb-item" aria-current="page">
-                  الرئيسية
-                </li>
+                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">ملف العضو</li>
               </ol>
             </nav>
             <div class="section_content">
@@ -1485,7 +1513,7 @@
     </div>
     <div class="footer-app d-flex align-items-center justify-content-end gap-2">
       <a href="https://www.const-tech.org/">
-        جميع الحقوق محفوظة موثوق 2022
+        جميع الحقوق محفوظة 2023
         <img src="img/login_logo.png" class="logo" alt="logo_login" />
       </a>
     </div>

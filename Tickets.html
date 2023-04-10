@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الرئيسية</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Main File Css  -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Start layout -->
+  <div>
+    <div class="app app-h">
+      <div class="sidebar">
+        <div class="close tog-nav tog-active" data-active=".app">
+          <i class="fas fa-xmark"></i>
+        </div>
+        <ul class="list">
+          <li class="list-item active">
+            <a href="index.html">
+              <div>
+                <i class="fa-solid fa-desktop icon"></i>
+                الواجهة
+              </div>
+            </a>
+          </li>
+          <li class="list-item">
+            <a data-bs-toggle="collapse" href="#settings" aria-expanded="false">
+              <div>
+                <i class="fa-solid fa-gear icon"></i>
+                الاعدادات
+              </div>
+              <i class="fa-solid fa-angle-right arrow"></i>
+            </a>
+          </li>
+          <div id="settings" class="collapse item-collapse">
+            <li class="list-item">
+              <a href="settings.html" class="">
+                <div>
+                  <i class="fa-solid fa-gear icon"></i>
+                  الاعدادات
+                </div>
+              </a>
+            </li>
+          </div>
+          <li class="list-item">
+            <a href="profileEmployee.html">
+              <div>
+                <i class="fa-solid fa-user"></i>
+                ملف العضو
+              </div>
+            </a>
+          </li>
+          <li class="list-item">
+            <a data-bs-toggle="collapse" href="#tickets" aria-expanded="false">
+              <div>
+                <i class="fa-solid fa-ticket icon"></i>
+                تذاكر الدعم الفني
+              </div>
+              <i class="fa-solid fa-angle-right arrow"></i>
+            </a>
+          </li>
+          <div id="tickets" class="collapse item-collapse">
+            <li class="list-item">
+              <a href="Tickets.html">
+                <div>
+                  <i class="fa-solid fa-border-all"></i>
+                  الكل
+                </div>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="main-side">
+        <div class="container-fluid mt-5">
+          <nav class="main-navbar">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="tog-nav tog-active" data-tog="true" data-active=".app">
+                <i class="fas fa-bars"></i>
+              </div>
+              <div class="list-item">
+                <div class="btn btn-green btn-sm">
+                  يوجد طلبات جديدة
+                  <i class="fa-solid fa-bell fa-shake"></i>
+                </div>
+                <a href="#" class="icon-nav">
+                  <i class="fa-solid fa-language"></i>
+                </a>
+                <div class="dropdown msg icon-nav">
+                  <div class="badge-count">0</div>
+                  <button class="dropdown-toggle icon-nav" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-regular fa-envelope"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="dropdown notice icon-nav">
+                  <div class="badge-count">0</div>
+                  <button class="dropdown-toggle icon-nav" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="far fa-bell"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <a href="#" class="icon-nav">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+              </div>
+            </div>
+          </nav>
+          <section class="py-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb bg-light p-3">
+                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">التذاكر</li>
+              </ol>
+            </nav>
+            <div class="section_content">
+              <form id="collapse-add" class="collapse mb-3" method="" action=''>
+                <div class="content_view">
+                  <div class="content_header">
+                    <div class="title">
+                      أضف تذكرة الدعم الفني
+                    </div>
+                    <a data-bs-toggle="collapse" href="#collapse-add" aria-expanded="false" class="btn main-btn btn-sm">
+                      إخفاء
+                    </a>
+                  </div>
+                  <div class="row g-4">
+                    <div class="col-md-6">
+                      <label class="small-label" for="">
+                        الموضوع
+                        <span class="text-danger">*</span>
+                      </label>
+                      <input type="text" class="form-control" name="subject" value="">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="small-label" for="">
+                        الاهمية
+                        <span class="text-danger">*</span>
+                      </label>
+                      <select name="priority" class="form-select">
+                        <option value="low" class="text-success">
+                          منخفضة</option>
+                        <option value="medium" class="text-warning">
+                          متوسطة</option>
+                        <option value="high" class="text-danger">
+                          عالية</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="small-label" for="">
+                        القسم
+                        <span class="text-danger">*</span>
+                      </label>
+                      <select name="category_id" class="form-select">
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="small-label" for="">
+                        الموظف
+                        <span class="text-danger">*</span>
+                      </label>
+                      <select name="user_id" class="form-select">
+                        <option value="1">
+                          admin</option>
+                        <option value="2">
+                          موظف 1</option>
+                        <option value="3">
+                          موظف 2</option>
+                        <option value="4">
+                          موظف 3</option>
+                      </select>
+                    </div>
+                    <div class="col-md-12">
+                      <label class="small-label" for="">
+                        الوصف
+                        <span class="text-danger">*</span>
+                      </label>
+                      <textarea name="description" class="form-control" rows="5"></textarea>
+                    </div>
+                    <div class="content_footer d-flex align-items-cnenter gap-2">
+                      <input type="reset" class="btn btn-light btn-sm" value="إعادة الضبط">
+                      <input type="submit" class="btn main-btn btn-sm" value="حفظ">
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="content_view mb-4">
+                <div class="content_header">
+                  <div class="title">تذكرة الدعم الفني</div>
+                  <a data-bs-toggle="collapse" href="#collapse-add" aria-expanded="false" class="btn main-btn btn-sm">
+                    اضف جديد
+                  </a>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <div class="d-flex align-items-center gap-1">
+                      عرض
+                      <select class="form-select w-auto form-select-sm">
+                        <option value="10">
+                          10
+                        </option>
+                        <option value="25">
+                          25
+                        </option>
+                        <option value="50">
+                          50
+                        </option>
+                        <option value="100">
+                          100
+                        </option>
+                      </select>
+                      سجلات
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <div class="d-flex align-items-center gap-1">
+                      بحث
+                      <input type="search" class="search-table form-control w-auto form-control-sm" />
+                    </div>
+                  </div>
+                </div>
+                <div class="main-table table-responsive mt-3">
+                  <table class="table table-borderless">
+                    <tbody>
+                      <tr>
+                        <th>#</th>
+                        <th>الموضوع</th>
+                        <th>الاهمية</th>
+                        <th>القسم</th>
+                        <th>الموظف</th>
+                        <th>الوصف</th>
+                        <th>تحكم</th>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>تجربة تذكرة</td>
+                        <td>
+                          <span class="text-warning">متوسطة</span>
+                        </td>
+                        <td>تجربة قسم</td>
+                        <td>
+                          موظف 1
+                        </td>
+                        <td>تجربة تذكرة تجربة تذكرة تجربة تذكرة تجربة تذكرة</td>
+                        <td>
+                          <div class="d-flex align-items-center gap-1">
+                            <a href="showTicket.html" class="btn btn-sm btn-purple">
+                              <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="#" class="btn btn-sm btn-info">
+                              <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+                            <form action="" method="">
+                              <button class="btn btn-sm btn-danger">
+                              <i class="fas fa-trash"></i>
+                              </button>
+                            </form>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul class="pagination main-pagination mt-2 d-flex justify-content-end">
+                  <li class="page-item">
+                    <a class="page-link" href="#">سابق</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">تالي</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="footer-app d-flex align-items-center justify-content-end gap-2">
+          <a href="https://www.const-tech.org/">
+            جميع الحقوق محفوظة 2023
+            <img src="img/login_logo.png" class="logo" alt="logo_login" />
+          </a>
+        </div>
+        <!-- End layout -->
+        <!-- Js Files -->
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
+</body>
+
+</html>

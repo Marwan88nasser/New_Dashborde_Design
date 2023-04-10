@@ -403,6 +403,7 @@ input[readonly]:focus {
 }
 .main-pagination .page-item .page-link {
   color: #6c757d !important;
+  font-size: 13px;
 }
 .main-pagination .page-item.active .page-link {
   background-color: #e02222 !important;
@@ -461,7 +462,7 @@ input[readonly]:focus {
   }
 }
 .app .sidebar .list {
-  margin-top: 45px !important;
+  margin-top: 48px !important;
   padding: 0;
   margin: 0;
   overflow-y: scroll;
