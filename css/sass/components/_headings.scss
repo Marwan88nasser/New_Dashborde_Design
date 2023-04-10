@@ -1,0 +1,30 @@
+.small-label {
+  color: $dark-grey;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.content_view {
+  background-color: $white_color;
+  border-radius: 0.3rem;
+  box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  .content_header {
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    .title {
+      color: #525f71;
+      font-size: 13px;
+      font-weight: 600;
+    }
+  }
+  .content_footer {
+    border-top: 1px solid #f1f1f1;
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+}
